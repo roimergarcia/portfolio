@@ -7,6 +7,7 @@
 
 
 ## About me
+## About me
 
 I'm a web developer, with experience in ASP.NET with VB.Net, SQL Server, Android with Kotlin, PHP with Laravel, and modern HTML, CSS, and JavaScript. 
 
