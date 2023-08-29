@@ -4,9 +4,6 @@
     <span>Roimer García - Porfolio</span></div>
 </a></p>
 
-
-
-## About me
 ## About me
 
 I'm a web developer, with experience in ASP.NET with VB.Net, SQL Server, Android with Kotlin, PHP with Laravel, and modern HTML, CSS, and JavaScript. 
@@ -18,7 +15,7 @@ After 17 year in the private industry, I'd also worked with many others programm
 - [PowerShell](https://en.wikipedia.org/wiki/PowerShell)
 - [Gimp](https://www.gimp.org)
 - [Inkscape](https://inkscape.org)
-- [BLender](https://www.blender.org)
+- [Blender](https://www.blender.org)
 
 ## Projects
 
