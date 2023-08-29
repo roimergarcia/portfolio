@@ -28,4 +28,5 @@ In the mean time, you can visit my blog [Variable Tecnica](https://variabletecni
 - Folow me on X, in [@roimer](https://twitter.com/roimergarcia)
 - Check what I'm working on in my Github [roimergarcia](https://github.com/roimergarcia)
 - You can also email me at roimer@vatiabletecnica.com
+- Or see my portfolio live at https://portfolio.variabletecnica.com
  
