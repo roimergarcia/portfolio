@@ -1,0 +1,16 @@
+:root{ 
+    /* Colores del tema */
+    --primario: #F7F7F7;
+    --secundario: #111439;
+    --acento: #F4D35E;
+    --error: #D62828;
+    --ok: #00AB58;
+    --info: #148DD3;
+    --fuente-primario: rgba(0, 0, 0, 0.9);
+    --fuente-secundario: rgba(255, 255, 255, 0.9);
+    --fuente-acento: rgba(0, 0, 0, 0.9);
+    /* fuentes */
+
+    /* medidas */
+    --ancho-max: 900px;
+}

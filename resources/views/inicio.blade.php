@@ -96,7 +96,18 @@
             content<br>
         </main>
         <footer>
-            contact@email.com
+            <div class="footer__contenedor">
+                <img src="{{ Vite::asset('resources/images/logo-vt.svg') }}" loading="lazy"  >
+                <div class="footer__grupo-link">
+                    <label>Escribeme a:</label>
+                    <a href="mail:roimer@variabletecnica.com">contact@email.com</a>
+                </div>
+                <div class="footer__grupo-link">
+                    <label>Visita mi blog de programación:</label>
+                    <a href="https://variabletecnica.com" target="__blank">variabletecnica.com</a>
+                </div>
+                    
+            </div>
         </footer>
 
     </body>
