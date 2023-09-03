@@ -21,49 +21,14 @@
         <header>
             <nav>
                 <menu>
-                    <li><a href="#">About me</a></li>
-                    <li><a href="#">Projects</a></li>
-                    <li><a href="#">Contact me</a></li>
+                    <li><a href="#">{{ __('About me') }}</a></li>
+                    <li><a href="#">{{ __('Projects') }}</a></li>
+                    <li><a href="#">{{ __('Skills') }}</a></li>
+                    <li><a href="#">{{ __('Contact me') }}</a></li>
                 </menu>
             </nav>
         </header>
         <main>
-            content<br>
-            content<br>
-            content<br>
-            content<br>
-            content<br>
-            content<br>
-            content<br>
-            content<br>
-            content<br>
-            content<br>
-            content<br>
-            content<br>
-            content<br>
-            content<br>
-            content<br>
-            content<br>
-            content<br>
-            content<br>
-            content<br>
-            content<br>
-            content<br>
-            content<br>
-            content<br>
-            content<br>
-            content<br>
-            content<br>
-            content<br>
-            content<br>
-            content<br>
-            content<br>
-            content<br>
-            content<br>
-            content<br>
-            content<br>
-            content<br>
-            content<br>
             content<br>
             content<br>
             content<br>
@@ -99,11 +64,11 @@
             <div class="footer__contenedor">
                 <img src="{{ Vite::asset('resources/images/logo-vt.svg') }}" loading="lazy"  >
                 <div class="footer__grupo-link">
-                    <label>Escribeme a:</label>
+                    <label>{{ __('Email me at:')}}</label>
                     <a href="mail:roimer@variabletecnica.com">contact@email.com</a>
                 </div>
                 <div class="footer__grupo-link">
-                    <label>Visita mi blog de programación:</label>
+                    <label>{{ __('Visit my programming blog:')}}</label> 
                     <a href="https://variabletecnica.com" target="__blank">variabletecnica.com</a>
                 </div>
                     
