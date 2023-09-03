@@ -10,6 +10,9 @@
         <link rel="preconnect" href="https://fonts.bunny.net">
         <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
 
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" 
+            integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" 
+            crossorigin="anonymous" referrerpolicy="no-referrer" />
         @vite(['resources/css/app.css', 'resources/js/app.js'])
 
         <!-- Styles -->
@@ -20,45 +23,43 @@
     <body class="antialiased">
         <header>
             <nav>
-                <menu>
+                {{-- <div class="logo"></div> --}}
+                <div class="header__logo">
+                    <img  src="{{ Vite::asset('resources/images/logo-vt.svg') }}" alt="{{ __('Logo of Roimer\'s portfolio') }}">
+                    <span>{{ __('Portfolio') }}</span>   
+                </div>   
+                <ul>
                     <li><a href="#">{{ __('About me') }}</a></li>
                     <li><a href="#">{{ __('Projects') }}</a></li>
                     <li><a href="#">{{ __('Skills') }}</a></li>
                     <li><a href="#">{{ __('Contact me') }}</a></li>
-                </menu>
+                </ul>
+
+                <button class="header__menu-toggle-btn">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+
             </nav>
+
+            <menu class="header__drop-down">
+                <li><a href="#">{{ __('About me') }}</a></li>
+                <li><a href="#">{{ __('Projects') }}</a></li>
+                <li><a href="#">{{ __('Skills') }}</a></li>
+                <li><a href="#">{{ __('Contact me') }}</a></li>
+            </menu>
+
         </header>
         <main>
-            content<br>
-            content<br>
-            content<br>
-            content<br>
-            content<br>
-            content<br>
-            content<br>
-            content<br>
-            content<br>
-            content<br>
-            content<br>
-            content<br>
-            content<br>
-            content<br>
-            content<br>
-            content<br>
-            content<br>
-            content<br>
-            content<br>
-            content<br>
-            content<br>
-            content<br>
-            content<br>
-            content<br>
-            content<br>
-            content<br>
-            content<br>
-            content<br>
-            content<br>
-            content<br>
+
+            <section class="seccion__about-me"> 
+
+            </section>
+
+            <section class="seccion__projects"> 
+
+            </section>
+
+            
         </main>
         <footer>
             <div class="footer__contenedor">
@@ -72,6 +73,11 @@
                     <a href="https://variabletecnica.com" target="__blank">variabletecnica.com</a>
                 </div>
                     
+            </div>
+            <div>
+                <label>Atribuciones</label>
+                Blue background: <a href="https://www.freepik.com/free-vector/flat-polygonal-background_13398920.htm#query=website%20background&position=14&from_view=search&track=ais">Freepik</a>
+                White background: <a href="https://www.freepik.com/free-vector/abstract-white-shapes-background_12628435.htm#query=website%20background&position=48&from_view=keyword&track=ais">Image by coolvector</a> on Freepik
             </div>
         </footer>
 

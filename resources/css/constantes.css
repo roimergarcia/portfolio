@@ -12,5 +12,7 @@
     /* fuentes */
 
     /* medidas */
-    --ancho-max: 900px;
+    --ancho-max: 1200px;
+    --ruptura-desk: 992px;
+    --ruptura-tablet: 0 ;
 }

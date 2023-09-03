@@ -1,0 +1,135 @@
+/* ENCABEZADO */
+header {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 2em;
+    background: white;
+    
+    .c{ display:none}
+
+    /* LOGO */
+    & .header__logo{
+        display: flex;
+        align-items: center;
+        gap: 0.5em;
+        flex: 0 0 auto;
+        font-size: 2em;
+    }
+
+
+
+    /* NAVEGACION */
+    & nav{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        height: 60px;
+        width: 100%;
+        max-width: var(--ancho-max);
+        background: transparent;
+    }
+
+    & .header__menu-toggle-btn{
+        display: none;
+        color: var(--secundario);
+        font-size: 1.5em;
+        background-color: transparent;
+        border-style: none;
+        cursor: pointer;
+
+    }
+
+    & ul {
+        display: flex;
+        padding: 0;
+        margin: 0;
+        gap: 1em;
+        list-style: none;
+    }
+    
+    & ul li {
+        flex-grow: 1;
+        padding: 1em;
+        list-style: none;
+    }
+
+    & ul a {
+        display: inline-block;
+        width: 100%;
+        padding: 1em 1em;
+        text-decoration: none;
+        color: var(--secundario);
+    }
+    
+    & ul a:hover {
+        color: var(--acento);
+    }
+
+    /* MENU DESPLEGABLE  */
+
+    .header__drop-down{
+        display: none;
+        position: absolute;
+        padding: 0;
+        margin: 0;
+        right: 2em;
+        top: 60px;
+        width: 300px;
+        height: 0;
+        color: var(--fuente-secundario);
+        background-color: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(16px);
+        border-radius: 10px;
+        overflow: hidden;
+        transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+    .header__drop-down.open {
+        height: 186px;
+    }
+    
+
+    .header__drop-down li {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 0.7em;
+        list-style: none;
+    }
+    .header__drop-down li a {
+        display: inline-block;
+        text-decoration: none;
+        color: var(--fuente-secundario);
+    }
+
+}
+
+/* RESPONSIVIDAD */
+
+@media (max-width: 992px) {
+    header .header__menu-toggle-btn {
+       display: block;
+   }
+}
+
+@media (max-width: 992px) {
+    header .header__drop-down{
+        display: block;
+   }
+}
+
+@media (max-width: 992px) {
+    header ul li {
+        display: none;
+    }
+}
+
+@media (max-width: 576px) {
+    header .header__drop-down {
+       left: 2em;
+       width: calc(100% - 4em);
+   }
+}
+
+
