@@ -1,11 +1,38 @@
 
 .seccion__about-me{
+    display: grid;
+    align-items: center;
+    justify-items: center;
     height: 100vh;
+    padding: 2em;
     max-height: 800px;
+    color: var(--primario);
     background-image: url("/resources/images/blue-bg.jpg");
     background-color: darkblue;
     background-size: cover;
+
+    & .seccion__contenedor {
+        display: flex;
+        flex-direction: row;
+        gap: 2em;
+    }
+    & .seccion__foto-perfil{
+        border-radius: 50%;
+        max-width: 200px;
+    }
+
+    & h2 { 
+        font-size: 200%;
+        letter-spacing: 1pt;
+        margin-bottom: 1em;
+    }
 } 
+
+@media (max-width: 992px) {
+    .seccion__contenedor{
+        flex-direction: column;
+    }
+}
 
 .seccion__projects{
     height: 100vh;

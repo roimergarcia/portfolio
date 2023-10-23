@@ -50,12 +50,24 @@
 
         </header>
         <main>
-
+             
             <section class="seccion__about-me"> 
-
+                <div class="seccion__contenedor">
+                    <img class="seccion__foto-perfil" src="{{ Vite::asset('resources/images/roimer-garcia.jpg') }}" loading="lazy" alt="Roimer García">
+                    <div>
+                        <h2>Roimer García<br>
+                            <small>Desarrollador web</small>
+                        </h2>    
+                        <div>
+                            <a href="">Github</a>
+                            <a href="">LinkedIn</a>
+                            <a href="https://twitter.com/roimergarcia">Twitter</a>
+                        </div>
+                    </div>
+                </div>
             </section>
 
-            <section class="seccion__projects"> 
+            <section class="seccion seccion__projects"> 
 
             </section>
 
@@ -66,7 +78,7 @@
                 <img src="{{ Vite::asset('resources/images/logo-vt.svg') }}" loading="lazy"  >
                 <div class="footer__grupo-link">
                     <label>{{ __('Email me at:')}}</label>
-                    <a href="mail:roimer@variabletecnica.com">contact@email.com</a>
+                    <a href="mail:roimer@variabletecnica.com">roimer@variabletecnica.com</a>
                 </div>
                 <div class="footer__grupo-link">
                     <label>{{ __('Visit my programming blog:')}}</label> 
