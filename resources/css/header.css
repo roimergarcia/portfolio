@@ -12,7 +12,8 @@ header {
     /* LOGO */
     & .header__logo{
         display: flex;
-        align-items: center;
+        height: 48px;
+        align-items: stretch;
         gap: 0.5em;
         flex: 0 0 auto;
         font-size: 2em;

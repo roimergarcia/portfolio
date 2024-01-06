@@ -1,12 +1,26 @@
 :root{ 
+    --black-russian-50: #edebff;
+    --black-russian-100: #e1dbff;
+    --black-russian-200: #ccbfff;
+    --black-russian-300: #af98ff;
+    --black-russian-400: #9c6fff;
+    --black-russian-500: #944eff;
+    --black-russian-600: #902efd;
+    --black-russian-700: #8022e0;
+    --black-russian-800: #661fb4;
+    --black-russian-900: #53228d;
+    --black-russian-950: #140821;
+
+
+
     /* Colores del tema */
-    --primario: #F7F7F7;
+    --primario: var(--black-russian-50);
     --secundario: #111439;
     --acento: #F4D35E;
     --error: #D62828;
     --ok: #00AB58;
     --info: #148DD3;
-    --fuente-primario: rgba(0, 0, 0, 0.9);
+    --fuente-primario: var(--black-russian-950);
     --fuente-secundario: rgba(255, 255, 255, 0.9);
     --fuente-acento: rgba(0, 0, 0, 0.9);
     /* fuentes */
