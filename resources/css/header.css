@@ -7,8 +7,6 @@ header {
     padding: 0 2em;
     background: white;
     
-    .c{ display:none}
-
     /* LOGO */
     & .header__logo{
         display: flex;
@@ -18,8 +16,6 @@ header {
         flex: 0 0 auto;
         font-size: 2em;
     }
-
-
 
     /* NAVEGACION */
     & nav{
@@ -34,6 +30,7 @@ header {
 
     & .header__menu-toggle-btn{
         display: none;
+        width: 32px;
         color: var(--secundario);
         font-size: 1.5em;
         background-color: transparent;
@@ -80,11 +77,11 @@ header {
         width: 300px;
         height: 0;
         color: var(--fuente-secundario);
-        background-color: rgba(255, 255, 255, 0.1);
+        background-color: #FFF;
         backdrop-filter: blur(16px);
-        border-radius: 10px;
+        border-radius: 0 0 4px 4px;
         overflow: hidden;
-        transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        transition: height 0.2s ease-out;
     }
     .header__drop-down.open {
         height: 186px;

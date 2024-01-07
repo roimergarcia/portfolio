@@ -11,7 +11,7 @@ main {
 
 footer{
     flex: 0 0 auto;
-    color: var(--fuente-secundario);
+    color: var(--fuente-primario);
     background-color: var(--secundario);
     
     & .footer__contenedor {
@@ -20,12 +20,15 @@ footer{
         margin: 0 auto;
         padding: 2em;
     }
+    & .footer__logo {
+        height: 128px;
+    }
     & .footer__grupo-link {
         display: flex;
         flex-direction: column;
         padding: 2em;
         & a{
-            color: var(--fuente-secundario);
+            color: var(--fuente-primario);
         }
     }
 }

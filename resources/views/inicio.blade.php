@@ -59,23 +59,23 @@
                             <small>Desarrollador web</small>
                         </h2>    
                         <div>
-                            <a href="">Github</a>
-                            <a href="">LinkedIn</a>
-                            <a href="https://twitter.com/roimergarcia">Twitter</a>
+                            <a class="seccion__about-me__social" href="https://github.com/roimergarcia"><i class="fa-brands fa-github"></i>Github</a>
+                            <a class="seccion__about-me__social" href="https://www.linkedin.com/in/roimergarcia/"><i class="fa-brands fa-linkedin"></i>LinkedIn</a>
+                            <a class="seccion__about-me__social" href="https://twitter.com/roimergarcia"><i class="fa-brands fa-square-x-twitter"></i>Twitter</a>
                         </div>
                     </div>
                 </div>
             </section>
 
             <section class="seccion seccion__projects"> 
-
+                
             </section>
 
             
         </main>
         <footer>
             <div class="footer__contenedor">
-                <img src="{{ Vite::asset('resources/images/logo-vt.svg') }}" loading="lazy"  >
+                <img class="footer__logo" src="{{ Vite::asset('resources/images/logo-vt.svg') }}" loading="lazy"  >
                 <div class="footer__grupo-link">
                     <label>{{ __('Email me at:')}}</label>
                     <a href="mail:roimer@variabletecnica.com">roimer@variabletecnica.com</a>
