@@ -5,7 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
 
         <title>Roimer - Portafolio</title>
-        <link rel="icon" type="image/svg+xml" href="{{ Vite::asset('resources/images/logo-vt.png') }}">
+        <link rel="icon" type="image/png" href="{{ Vite::asset('resources/images/logo-vt.png') }}">
         <!-- Fonts -->
         <link rel="preconnect" href="https://fonts.bunny.net">
         <link href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap" rel="stylesheet" />
@@ -21,77 +21,24 @@
         </style>
     </head>
     <body class="antialiased">
-        <header>
-            <nav>
-                {{-- <div class="logo"></div> --}}
-                <div class="header__logo">
-                    <img  src="{{ Vite::asset('resources/images/logo-vt.svg') }}" alt="{{ __('Logo of Roimer\'s portfolio') }}">
-                    <span>{{ __('Portfolio') }}</span>   
-                </div>   
-                <ul>
-                    <li><a href="#">{{ __('About me') }}</a></li>
-                    <li><a href="#">{{ __('Projects') }}</a></li>
-                    <li><a href="#">{{ __('Skills') }}</a></li>
-                    <li><a href="#">{{ __('Contact me') }}</a></li>
-                </ul>
 
-                <button class="header__menu-toggle-btn">
-                    <i class="fa-solid fa-bars"></i>
-                </button>
+        <x-cabecera />
 
-            </nav>
-
-            <menu class="header__drop-down">
-                <li><a href="#">{{ __('About me') }}</a></li>
-                <li><a href="#">{{ __('Projects') }}</a></li>
-                <li><a href="#">{{ __('Skills') }}</a></li>
-                <li><a href="#">{{ __('Contact me') }}</a></li>
-            </menu>
-
-        </header>
         <main>
+
+             <x-secciones.acercademi />
+
+             <x-secciones.proyectos />
+
+             <x-secciones.habilidades />
+
+             <x-secciones.experiencia />
              
-            <section class="seccion__about-me"> 
-                <div class="seccion__contenedor">
-                    <img class="seccion__foto-perfil" src="{{ Vite::asset('resources/images/roimer-garcia.jpg') }}" loading="lazy" alt="Roimer García">
-                    <div>
-                        <h2>Roimer García<br>
-                            <small>Desarrollador web</small>
-                        </h2>    
-                        <div>
-                            <a class="seccion__about-me__social" href="https://github.com/roimergarcia"><i class="fa-brands fa-github"></i>Github</a>
-                            <a class="seccion__about-me__social" href="https://www.linkedin.com/in/roimergarcia/"><i class="fa-brands fa-linkedin"></i>LinkedIn</a>
-                            <a class="seccion__about-me__social" href="https://twitter.com/roimergarcia"><i class="fa-brands fa-square-x-twitter"></i>Twitter</a>
-                        </div>
-                    </div>
-                </div>
-            </section>
+             <x-secciones.contacto />
 
-            <section class="seccion seccion__projects"> 
-                
-            </section>
-
-            
         </main>
-        <footer>
-            <div class="footer__contenedor">
-                <img class="footer__logo" src="{{ Vite::asset('resources/images/logo-vt.svg') }}" loading="lazy"  >
-                <div class="footer__grupo-link">
-                    <label>{{ __('Email me at:')}}</label>
-                    <a href="mail:roimer@variabletecnica.com">roimer@variabletecnica.com</a>
-                </div>
-                <div class="footer__grupo-link">
-                    <label>{{ __('Visit my programming blog:')}}</label> 
-                    <a href="https://variabletecnica.com" target="__blank">variabletecnica.com</a>
-                </div>
-                    
-            </div>
-            <div>
-                <label>Atribuciones</label>
-                Blue background: <a href="https://www.freepik.com/free-vector/flat-polygonal-background_13398920.htm#query=website%20background&position=14&from_view=search&track=ais">Freepik</a>
-                White background: <a href="https://www.freepik.com/free-vector/abstract-white-shapes-background_12628435.htm#query=website%20background&position=48&from_view=keyword&track=ais">Image by coolvector</a> on Freepik
-            </div>
-        </footer>
+
+        <x-piedepagina />
 
     </body>
 </html>
