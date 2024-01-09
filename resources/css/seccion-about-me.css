@@ -2,9 +2,9 @@
     display: grid;
     align-items: center;
     justify-items: center;
-    height: 100vh;
+    height: calc(100vh - 60px);
     padding: 2em;
-    max-height: 800px;
+    max-height: 400px;
     color: var(--fuente-primario);
     /* background-image: url("/resources/images/blue-bg.jpg"); */
     background-color: var(--primario);
@@ -22,14 +22,14 @@
         max-width: 200px; 
         object-fit: contain;
     }
-
     & .about-me__title { 
-        font-size: 200%;
+        font-size: 240%;
         letter-spacing: 1pt;
         margin: 0;
     }
     & .about-me__subtitle{
-
+        font-size: 150%;
+        margin-bottom: 1em;
     }
     & .seccion__about-me__social-container{
         display: flex;
