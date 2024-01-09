@@ -1,34 +1,11 @@
 @import "constantes.css";
 @import "global.css";
 @import "header.css";
+@import "piedepagina.css";
 @import "seccion-about-me.css";
 
 main {
     flex: 1 1 auto;
     color: var(--fuente-primario);
     background-color: var(--primario);
-}
-
-footer{
-    flex: 0 0 auto;
-    color: var(--fuente-primario);
-    background-color: var(--secundario);
-    
-    & .footer__contenedor {
-        display: flex;
-        max-width: var(--ancho-max);
-        margin: 0 auto;
-        padding: 2em;
-    }
-    & .footer__logo {
-        height: 128px;
-    }
-    & .footer__grupo-link {
-        display: flex;
-        flex-direction: column;
-        padding: 2em;
-        & a{
-            color: var(--fuente-primario);
-        }
-    }
 }
