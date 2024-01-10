@@ -40,6 +40,13 @@ readonly class Portafolio {
          ) 
     );
 
+    const ICONOS_TECNOLOGIA = array(
+        'javascript' => '<i class="fa-brands fa-js"></i>',
+        'html' => '<i class="fa-brands fa-html5"></i>',
+        'css' => '<i class="fa-brands fa-css3"></i>',
+        'vue' => '<i class="fa-brands fa-vuejs"></i>'
+    );
+
 }
 
 

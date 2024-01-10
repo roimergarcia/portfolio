@@ -1,14 +1,14 @@
 .seccion__proyectos{
     /* height: calc(100vh - 60px); */
     color: var(--fuente-secundario);
-    padding: 2em;
+    padding: 2rem;
     background-image: url("/resources/images/white-bg.jpg");
     background-size: cover;
     
     & .seccion__contenedor {
         display: flex;
         flex-wrap: wrap;
-        gap: 1em;
+        gap: 1rem;
         justify-content: center;
     }
 
@@ -17,16 +17,52 @@
     display: flex;
     flex-direction:column;
     flex: 0 0 auto;
-    width: 300px;
-    height: 250px;
-    padding: 0.5em;
+    width: 350px;
+    height: 400px;
+    padding: 0.5rem 0.5rem 1rem 0.5rem;
     background-color: var(--black-russian-50);
-    
-    & .proyectos__imagen-tarjeta{
-        display: inline-block;        
+    box-shadow: 0 0 2px rgb(51 51 51 / 5%);
+
+    .proyectos__imagen-tarjeta{
+        display: inline-block;
+        flex: 0 0 auto;
         width: 100%;
-        height: 150px;
+        height: 200px;
         object-fit: cover;
         object-position: top left;
+    }
+    /* .proyectos__nombre-tarjeta{
+
+    } */
+    .proyectos__descripcion-tarjeta{
+        flex: 1 0 auto;
+        font-size: smaller;
+    }
+    .proyectos__tecnologias-tarjeta{
+        flex: 0 0 auto;
+        margin: 0.5rem 0;
+    }
+    .proyectos__contenedor-urls-tarjeta{
+        display: flex;
+        justify-content: space-between;
+        align-items: stretch;
+        gap: 1rem;
+        height: 40px; ;
+    }
+    .proyectos__tech-tarjeta{
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        gap: 0.2rem;
+        padding: 0.1rem 0.4rem ;
+        font-size: small;
+        color: var(--secundario);
+        border: 1px solid #ccc;
+        border-radius: 14px;
+    }
+    .proyectos__url-codigo-tarjeta,
+    .proyectos__url-produccion-tarjeta{
+        vertical-align: middle;
+        line-height: 40px;
     }
 }

@@ -5,8 +5,6 @@
     <div class="seccion__contenedor">  
     @php($proyectos = Portafolio::PROYECTOS)
     @foreach ( $proyectos as $proyecto)
-        {{-- @dump($proyecto) --}}
-
         <x-tarjetaproyecto :proyecto='$proyecto'></x-tarjetaproyecto>
     @endforeach
 </div>
