@@ -2,7 +2,8 @@
 @import "global.css";
 @import "header.css";
 @import "piedepagina.css";
-@import "seccion-about-me.css";
+@import "seccion-sobre-me.css";
+@import "seccion-proyectos.css";
 
 main {
     flex: 1 1 auto;

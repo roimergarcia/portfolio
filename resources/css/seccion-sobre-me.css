@@ -43,15 +43,7 @@
 } 
 
 @media (max-width: 992px) {
-    .seccion__contenedor{
+    .seccion__about-me .seccion__contenedor{
         flex-direction: column;
     }
 }
-
-.seccion__projects{
-    height: 100vh;
-    max-height: 800px;
-    background-image: url("/resources/images/white-bg.jpg");
-    background-color: var(--primario);;
-    background-size: cover;
-} 
